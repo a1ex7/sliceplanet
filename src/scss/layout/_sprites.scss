@@ -1,0 +1,63 @@
+/* Sprites SVG */
+
+.icon {
+  fill: $primary-color;
+  &__search {
+    width: 18px;
+    height: 18px;
+  }
+  &__basket {
+    width: 23px;
+    height: 23px;
+  }
+  &__user {
+    width: 19px;
+    height: 17px;
+  }
+  &__menu {
+    display: block;
+    flex: none;
+    width: 17px;
+    height: 18px;
+    margin-right: 12px;
+  }
+  &__down-arrow {
+    width: 30px;
+    height: 12px;
+  }
+  &__right-arrow {
+    width: 11px;
+    height: 15px;
+  }
+  &__shevron-right,
+  &__shevron-left {
+    width: 26px;
+    height: 26px;
+
+    fill: #fff;
+  }
+  &__m-menu {
+    width: 20px;
+    height: 20px;
+  }
+  &__m-home {
+    width: 20px;
+    height: 20px;
+  }
+  &__m-search {
+    width: 20px;
+    height: 20px;
+  }
+  &__m-basket {
+    width: 20px;
+    height: 20px;
+  }
+  &__m-user {
+    width: 20px;
+    height: 20px;
+  }
+  &__m-phone {
+    width: 20px;
+    height: 20px;
+  }
+}

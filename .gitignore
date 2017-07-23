@@ -1,0 +1,6 @@
+/node_modules/
+/psd/
+/_task/
+/.git/
+/**/*.psd
+/**/Thumbs.db

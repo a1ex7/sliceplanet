@@ -1,0 +1,267 @@
+
+//main styles
+
+.main-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  width: 100%;
+  min-width: $min-width;
+  min-height: 100%;
+  padding: 0 0 0 0;
+  overflow: hidden;
+
+  -ms-flex-pack: start;
+}
+.wrapper {
+  position: relative;
+  min-width: $min-width;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 43px 0 43px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* titles */
+p {
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+
+  @include font($base-font-size,$base-line-height,$text-color);
+}
+h1 {
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+  font-family: $title-font-family;
+
+  @include font($font-size-h1,$line-height-h1,$title-color);
+}
+h2 {
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+  font-family: $title-font-family;
+
+  @include font($font-size-h2,$line-height-h2,$title-color);
+}
+h3 {
+  padding: 15px 0 15px 0;
+  font-weight: 400;
+  font-family: $title-font-family;
+
+  @include font($font-size-h3,$line-height-h3,$title-color);
+}
+
+/* text position */
+.text-left {
+  text-align: left!important;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-right {
+  text-align: right!important;
+}
+.nowrap {
+  white-space: nowrap!important;
+}
+
+
+/* loader */
+.loaded .main-wrapper {
+  visibility: hidden;
+}
+.icon-load {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-left: -20px;
+  background: url(../img/loader.gif) no-repeat left top;
+}
+.loaded .icon-load {
+  display: block;
+}
+
+
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+.content {
+  flex-grow: 1;
+  order: 2;
+  width: 100%;
+  min-width: $min-width;
+  text-align: left;
+  background: $base-bg;
+}
+
+.slide {
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    max-width: 500px;
+    padding: 10px 30px 22px 32px;
+    font-size: 42.5px;
+    line-height: 48px;
+    color: #fff;
+    background-color: $primary-color;
+    transform: translateY(-50%);
+    opacity: 0.88;
+  }
+}
+
+.slider-prev {
+  left: 43px;
+  background-color: $primary-color;
+  &:hover svg {
+    fill: $primary-color;
+  }
+}
+.slider-next {
+  right: 43px;
+  background-color: $primary-color;
+  &:hover svg {
+    fill: $primary-color;
+  }
+}
+
+.slider-arrow {
+  position: absolute;
+  top: calc(50% - 37.5px);
+  z-index: 1;
+  width: 37px;
+  height: 128px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  transform: translateY(-50%);
+  opacity: 0.88;
+  transition: $default-transition;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+  list-style: none;
+  button {
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+    font-size: 0;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.33;
+    transition: $default-transition;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.slick-active button {
+  opacity: 1;
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100hv;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  .slider-prev {
+    left: 15px;
+  }
+  .slider-next {
+    right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) {
+  .slide {
+    &__title {
+      left: 33px;
+      max-width: 290px;
+      padding: 8px 15px 9px 15px;
+      font-size: 22.86px;
+      line-height: 24.12px;
+      transform: translateY(-50%);
+    }
+  }
+  .slider-arrow {
+    width: 21px;
+    height: 65px;
+  }
+  .slider-prev svg,
+  .slider-next svg {
+    width: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+  .slider-arrow {
+    top: 50%;
+  }
+  .slider-prev {
+    left: 0;
+  }
+  .slider-next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .slide__title {
+    top: 50%;
+    left: 27px;
+    max-width: 190px;
+    padding: 5px 15px 5px 8px;
+    font-size: 16.2px;
+    line-height: 17.78px;
+  }
+  .slider-arrow {
+    width: 20px;
+    height: 28px;
+  }
+  .slider-prev,
+  .slider-next {
+    background-size: 40%;
+  }
+}

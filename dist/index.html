@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+</head>
+<body class="loaded">
+
+<!-- INLINE SVG SPRITE -->
+
+<div hidden>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="left-direction-arrow" viewBox="0 0 34.075 34.075"><title>left-direction-arrow</title><path d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79 L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792 C25.58,33.883,25.075,34.075,24.57,34.075z"/></symbol><symbol id="arrows" viewBox="0 0 185.343 185.343"><title>arrows</title><path d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175 l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934 c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"/></symbol><symbol id="three" viewBox="0 0 459 459"><title>three</title><path d="M0,255h51v-51H0V255z M0,357h51v-51H0V357z M0,153h51v-51H0V153z M102,255h357v-51H102V255z M102,357h357v-51H102V357z M102,102v51h357v-51H102z"/></symbol><symbol id="menu-button" viewBox="0 0 459 459"><title>menu-button</title><path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/></symbol><symbol id="home" viewBox="0 0 460.298 460.297"><title>home</title><path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041 c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629 c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939 z"/><path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816 c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245 c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136 c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998 L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125 c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"/></symbol><symbol id="magnifier-tool" viewBox="0 0 485.213 485.213"><title>magnifier-tool</title><path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951 C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46 c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465 C318.424,257.208,257.206,318.416,181.956,318.416z"/><path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324 c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/></symbol><symbol id="shopping-cart" viewBox="0 0 510 510"><title>shopping-cart</title><path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306 c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7 c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408 c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"/></symbol><symbol id="user-male-black-shape" viewBox="0 0 485.211 485.21"><title>user-male-black-shape</title><path d="M394.235,333.585h-30.327c-33.495,0-60.653-27.158-60.653-60.654v-19.484c13.418-15.948,23.042-34.812,29.024-54.745 c0.621-3.36,3.855-5.02,6.012-7.33c11.611-11.609,13.894-31.2,5.185-45.149c-1.186-2.117-3.322-3.953-3.201-6.576 c0-17.784,0.089-35.596-0.023-53.366c-0.476-21.455-6.608-43.773-21.65-59.66c-12.144-12.836-28.819-20.479-46.022-23.75 c-21.739-4.147-44.482-3.937-66.013,1.54c-18.659,4.709-36.189,15.637-47.028,31.836c-9.598,14.083-13.803,31.183-14.513,48.036 c-0.266,18.094-0.061,36.233-0.116,54.371c0.413,3.631-2.667,6.088-4.058,9.094c-8.203,14.881-4.592,35.155,8.589,45.978 c3.344,2.308,3.97,6.515,5.181,10.142c5.748,17.917,15.282,34.487,27.335,48.925v20.138c0,33.496-27.157,60.654-60.651,60.654 H90.978c0,0-54.964,15.158-90.978,90.975v30.327c0,16.759,13.564,30.321,30.327,30.321h424.562 c16.759,0,30.322-13.562,30.322-30.321V424.56C449.199,348.749,394.235,333.585,394.235,333.585z"/></symbol><symbol id="people" viewBox="0 0 488.8 488.8"><title>people</title><g> <path d="M280.1,368.95c0-20.1,5-39.4,14.4-56.6c-13.3-7.5-23.1-12.4-27.2-14.4c-1.3-0.6-2-1.9-2-3.3v-79 c9.9-6.6,16.5-17.9,16.5-30.7v-81.9c0-40.7-33-73.8-73.8-73.8h-8.8h-8.8c-40.7,0-73.8,33-73.8,73.8v81.9 c0,12.8,6.6,24.1,16.5,30.7v79c0,1.4-0.8,2.7-2,3.3c-11.3,5.5-66,33.1-116.7,74.8c-9.2,7.5-14.4,18.8-14.4,30.7v56.1h199.1h123.3 c-2.7-2.2-5.2-4.6-7.7-7.1C292.4,430.15,280.1,400.45,280.1,368.95z"/> </g><g> <path d="M398.2,278.35c-50,0-90.6,40.6-90.6,90.6s40.6,90.6,90.6,90.6s90.6-40.6,90.6-90.6S448.3,278.35,398.2,278.35z M400,397.05l-18.7,18.7l-18.7-18.7l-22.5-22.5l18.7-18.7l22.5,22.5l56.3-56.3l18.7,18.7L400,397.05z"/> </g></symbol><symbol id="phone" viewBox="0 0 512.001 512.001"><title>phone</title><path d="M462.491,468.206l-33.938,33.937c-6.062,6.031-23.812,9.844-24.343,9.844c-107.435,0.905-210.869-41.279-286.882-117.31 C41.097,318.46-1.136,214.619,0.036,106.872c0-0.063,3.891-17.312,9.938-23.312l33.937-33.968 c12.453-12.437,36.295-18.062,52.998-12.5l7.156,2.406c16.703,5.562,34.155,23.999,38.78,40.967l17.093,62.717 c4.64,17-1.594,41.186-14.031,53.623l-22.687,22.687c22.25,82.467,86.919,147.121,169.339,169.402l22.687-22.688 c12.438-12.438,36.687-18.656,53.687-14.031l62.718,17.125c16.937,4.594,35.374,22.03,40.968,38.748l2.375,7.156 C480.552,431.926,474.928,455.769,462.491,468.206z M287.996,255.993h31.999c0-35.343-28.655-63.998-63.998-63.998v31.999 C273.636,223.994,287.996,238.368,287.996,255.993z M415.992,255.993c0-88.373-71.623-159.996-159.995-159.996v32 c70.591,0,127.996,57.436,127.996,127.996H415.992z M255.997,0v31.999c123.496,0,223.993,100.497,223.993,223.994h31.999 C511.989,114.622,397.368,0,255.997,0z"/></symbol><symbol id="keyboard-right-arrow-button" viewBox="0 0 306 306"><title>keyboard-right-arrow-button</title><polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 "/></symbol><symbol id="expand-button" viewBox="0 0 306 306"><title>expand-button</title><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35 "/></symbol></svg>
+</div>
+
+<!-- BEGIN BODY -->
+
+<div class="main-wrapper">
+
+<!-- BEGIN CONTENT -->
+
+	<main class="content">
+		<div class="wrapper">
+			<!-- Begin slider -->
+			<section class="slider slick-slider">
+				<div class="slider__item slide">
+					<h2 class="slide__title">Новая коллекция SWAROVSKI уже здесь</h2>
+					<picture>
+						<source media="(max-width:768px)" srcset="img/slide1-320w.jpg">
+						<img clss="slide__img" src="img/slide1.jpg" alt="SWAROVSKY">
+					</picture>
+				</div>
+				<div class="slider__item slide">
+					<h2 class="slide__title">Новая коллекция SWAROVSKI уже здесь</h2>
+					<picture>
+						<source media="(max-width:768px)" srcset="img/slide1-320w.jpg">
+						<img clss="slide__img" src="img/slide1.jpg" alt="SWAROVSKY">
+					</picture>
+				</div>
+				<div class="slider__item slide">
+					<h2 class="slide__title">Новая коллекция SWAROVSKI уже здесь</h2>
+					<picture>
+						<source media="(max-width:768px)" srcset="img/slide1-320w.jpg">
+						<img clss="slide__img" src="img/slide1.jpg" alt="SWAROVSKY">
+					</picture>
+				</div>
+			</section>
+			<button type="button" class="slider-prev slider-arrow">
+				<svg class="icon icon__shevron-right">
+				 <use xlink:href="#left-direction-arrow" />
+				</svg>
+				Prev
+			</button>
+			<button type="button" class="slider-next slider-arrow">
+				<svg class="icon icon__shevron-left">
+				 <use xlink:href="#arrows" />
+				</svg>
+				Next
+			</button>
+			<!-- /.slider -->
+		</div>
+	</main>
+
+<!-- CONTENT EOF   -->
+
+<!-- BEGIN HEADER -->
+
+	<header class="header">
+		<div class="wrapper">
+
+			<!-- Mobile Menu -->
+			<nav class="mobile-menu">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__item mobile-menu__item--active"><a href="#" class="mobile-menu__link"><span class="ico ico__m-menu"><svg class="icon icon__m-menu"><use xlink:href="#menu-button" /></svg></span></a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span class="ico ico__m-home"><svg class="icon icon__m-home"><use xlink:href="#home" /></svg></span></a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span class="ico ico__m-search"><svg class="icon icon__m-search"><use xlink:href="#magnifier-tool" /></svg></span></a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span class="ico ico__m-basket"><svg class="icon icon__m-basket"><use xlink:href="#shopping-cart" /></svg></span></a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span class="ico ico__m-user"><svg class="icon icon__m-user"><use xlink:href="#people" /></svg></span></a></li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><span class="ico ico__m-phone"><svg class="icon icon__m-phone"><use xlink:href="#phone" /></svg></span></a></li>
+				</ul>
+			</nav>
+			<!-- End Mobile Menu -->
+
+			<div class="header__top">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img src="img/logo.png" alt="Blagoy Art" class="logo__img" width="247" height="30">
+						<h1 class="logo__title">Интернет-магазин «Благой арт»</h1>
+					</a>
+				</div>
+				<div class="search">
+					<form class="search__form" action="/search" method="GET">
+						<input class="search__input" type="search" name="q" value="" placeholder="Введите название или артикул">
+						<button class="search__btn" type="submit">
+							<svg class="icon icon__search">
+							 <use xlink:href="#magnifier-tool" />
+							</svg>
+							Search
+						</button>
+					</form>
+				</div>
+				<div class="contacts">
+					<div class="contacts__phone"><a href="tel:+78007078139">+7 (800) 707-81-39</a></div>
+					<div class="contacts__info">
+						<p><span>ПН-ПТ с 9:00 до 18:00</span></p>
+						<p>Доставка по РФ и СНГ</p>
+					</div>
+				</div>
+			</div><!-- /.header__top -->
+
+			<nav class="header__nav">
+				<div class="header__action">
+					<div class="basket">
+						<span class="basket__ico">
+							<svg class="icon icon__basket">
+								 <use xlink:href="#shopping-cart" />
+							</svg>
+						</span>
+						<span class="basket__count">10</span> товаров / <span class="basket__price">56 789 Р</span>
+					</div>
+					<div class="login">
+						<a href="/login">
+							<span class="login__ico">
+								<svg class="icon icon__user">
+								 <use xlink:href="#people" />
+								</svg>
+							</span>Войти
+						</a>
+					</div>
+				</div>
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__link--dropdown">
+							<svg class="icon icon__menu">
+								 <use xlink:href="#three" />
+							</svg>
+							КАТАЛОГ ТОВАРОВ
+							<svg class="icon icon__down-arrow">
+								 <use xlink:href="#expand-button" />
+							</svg>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Свадебная бижутерия<span class="dropdown-menu__arrow"><svg class="icon icon__right-arrow"><use xlink:href="#keyboard-right-arrow-button" /></svg></span></a></li>
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Аксессуары для волос</a></li>
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Броши</a></li>
+							<li class="dropdown-menu__item">
+								<a href="#" class="dropdown-menu__link">Мужские аксессуары<span class="dropdown-menu__arrow"><svg class="icon icon__right-arrow"><use xlink:href="#keyboard-right-arrow-button" /></svg></span></a>
+								<ul class="dropdown-menu dropdown-menu__submenu">
+									<li class="dropdown-menu__title">Мужская бижутерия</li>
+									<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Браслеты</a></li>
+									<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Кулоны</a></li>
+									<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Зажимы и запонки</a></li>
+								</ul>
+							</li>
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Клатчи</a></li>
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Детская бижутерия</a></li>
+							<li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Демонстрационное оборудование</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">УСЛОВИЯ РАБОТЫ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">СКИДКИ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">ОПЛАТА И ДОСТАВКА</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">ДОКУМЕНТЫ</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+				</ul>
+			</nav>
+			<!-- /.header__nav -->
+
+		</div>
+	</header>
+
+<!-- HEADER EOF   -->
+
+<!-- BEGIN FOOTER -->
+
+	<footer>
+		<div class="wrapper">
+
+		</div>
+	</footer>
+
+<!-- FOOTER EOF   -->
+
+</div>
+
+<div class="icon-load"></div>
+
+<!-- BODY EOF   -->
+
+	<!-- <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script> -->
+	<!--
+	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+	<script type="text/javascript" src="js/components/slick.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+	-->
+	<script type="text/javascript" src="js/scripts.min.js" ></script>
+</body>
+</html>
