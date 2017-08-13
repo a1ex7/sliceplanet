@@ -54,10 +54,12 @@ gulp.task('pug', function() {
 gulp.task('common-js', function() {
   return gulp.src([
       'src/js/custom.js',
+      'src/js/gsap.js',
       // other scripts
     ])
     .pipe(concat('custom.min.js'))
     .pipe(uglify())
+    .on('error', notify.onError())
     .pipe(gulp.dest('src/js'));
 });
 
@@ -76,7 +78,7 @@ gulp.task('js', ['common-js'], function() {
       'src/js/custom.min.js',
     ])
     .pipe(concat('scripts.min.js'))
-    // .pipe(uglify())   // optional, if lib scripts not minimized
+    //.pipe(uglify())   // optional, if lib scripts not minimized
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.reload({ stream: true }));
 });
